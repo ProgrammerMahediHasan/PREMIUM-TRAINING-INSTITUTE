@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-gradient {
+  background:
+    linear-gradient(135deg, #0a2540 0%, #0d2a48 40%, #102f52 100%),
+    radial-gradient(ellipse at 15% 10%, rgba(6,187,204,0.12), transparent 40%);
+}
+
+.section-muted {
+  @apply bg-gray-50;
+}
+
+.eyebrow {
+  @apply text-secondary font-semibold uppercase tracking-wider text-xs;
+}
+
+.subtitle {
+  @apply text-gray-600;
+}
+
+.smooth {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  @apply rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors;
+}
+
+.section {
+  @apply py-12 md:py-16;
+}
+
+.title {
+  @apply text-2xl md:text-3xl font-semibold;
+}
